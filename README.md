@@ -1,6 +1,8 @@
 # pytactxv2_race
 
-# Turbo Vroum
+# Turbo Vroum 
+
+![Logo](res/logo.png)
 
 # Description
 
