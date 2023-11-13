@@ -2,7 +2,7 @@
 
 # Turbo Vroum 
 
-![](res/logo.png =x250)
+<img src="res/logo.png" width="200">
 
 # Description
 
