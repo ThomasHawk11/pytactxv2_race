@@ -1,8 +1,8 @@
 # pytactxv2_race
 
-- **Turbo Vroum**
+# Turbo Vroum
 
-- **Description**
+# Description
 
 Ce jeu est un jeu de course en vue du dessus s'inspirant du principe de la série de jeux vidéo [TrackMania](https://fr.wikipedia.org/wiki/TrackMania).
     
