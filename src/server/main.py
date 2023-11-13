@@ -1,4 +1,4 @@
-import j2l.pytactx.agent as pytactx
+import api.j2l.pytactx.agent as pytactx
 
 agent = pytactx.Agent(playerId=input("👾 id: "),
 						arena=input("🎲 arena: "),
