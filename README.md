@@ -2,7 +2,7 @@
 
 # Turbo Vroum 
 
-![Logo](res/logo.png)
+![Logo](res/logo.png | width=100)
 
 # Description
 
