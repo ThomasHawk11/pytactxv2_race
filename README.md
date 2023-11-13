@@ -6,7 +6,7 @@
 - **🎲 Règles** du jeu : maquette, déroulé d'une partie, conditions de victoire
 - **🎮 Use cases**: 
 
-| N°  | Action                                                                                                                   | Priorité |
+| N°  | Actions                                                                                                                  | Priorité |
 | --- | ------------------------------------------------------------------------------------------------------------------------ | -------- |
 | 1   | En tant que joueur, je peux participer à des courses multijoueurs et défier d'autres joueurs.                            | 1        |
 | 2   | En tant que joueur, je peux contrôler le déplacement d'un véhicule (accélération, freinage, direction)                   | 2        |
