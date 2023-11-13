@@ -1,6 +1,10 @@
 # Turbo Vroum
 
-# Description
+# Turbo Vroum 
+
+<img src="res/logo.png" width="200">
+
+## Description
 
 Ce jeu est un jeu de course en vue du dessus s'inspirant du principe de la série de jeux vidéo [TrackMania](https://fr.wikipedia.org/wiki/TrackMania).
     
@@ -8,13 +12,13 @@ Ce jeu est un jeu de course en vue du dessus s'inspirant du principe de la séri
 
 Dans le cadre de notre troisième année de formation en BUT Informatique, en cours de Programmation avancée, nous  avons été chargés de développer un jeu en utilisant l'API de [PytactX de Jusdeliens](https://tutos.jusdeliens.com/index.php/2023/04/27/pytactx-creez-vos-propres-regles-du-jeu/). Bien sûr, le but est d'appliquer les bonnes pratiques de développement en langage Python ([TDD](https://fr.wikipedia.org/wiki/Test_driven_development), [POO](https://fr.wikipedia.org/wiki/Programmation_orient%C3%A9e_objet), [SOLID](https://fr.wikipedia.org/wiki/SOLID_(informatique))...)
 
-# 🎲 Règles du jeu
+- **🎲 Règles du jeu** :
 
 Le jeu consiste à déplacer une voiture sur un plateau de jeu définit par un circuit. Le but étant de réaliser le tour le plus rapide dans le temps impartit. Vous serez en concurrence avec d'autres joueurs avec qui vous vous batterez pour la première place. 
 
 ![Maquette](res/maquette.png)
 
-# 🎮 Use cases
+- **🎮 Use cases**:
 
 | N°  | Actions                                                                                                                  | Priorité |
 | --- | ------------------------------------------------------------------------------------------------------------------------ | -------- |
@@ -47,7 +51,6 @@ git clone https://github.com/ThomasHawk11/pytactxv2_race.git
 # 🧪 Tests 
     - définition du plan de test ce qu'on attend quand on fait quoi 
     - step by step pour lancer les tests
-# 🛣️ Roadmap
-# 🧑‍💻 Auteurs
-**Thomas PLANTAIS, Mathieu ORDONNAUD, Mylan MEGARD**
-# ⚖️ License [CC BY-NC 4.0 Deed](https://creativecommons.org/licenses/by-nc/4.0/)
+- **🛣️ Roadmap**
+- **🧑‍💻 Thomas PLANTAIS, Mathieu ORDONNAUD, Mylan MEGARD**
+- **⚖️ License [CC BY-NC 4.0 Deed](https://creativecommons.org/licenses/by-nc/4.0/)**
