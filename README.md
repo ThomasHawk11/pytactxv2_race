@@ -5,13 +5,15 @@
 - **🎯 Contexte & cahier des charges** : développé dans le cadre d'une formation, pour un formateur pour monter en compétence en Python ...
 - **🎲 Règles** du jeu : maquette, déroulé d'une partie, conditions de victoire
 - **🎮 Use cases**: 
+
 | N°  | Action                                                                                                                   | Priorité |
 |-----|--------------------------------------------------------------------------------------------------------------------------|----------|
-| 1   | En tant que joueur, je peux participer à des courses multijoueurs et défier d'autres joueurs.                            |     1    |
-| 2   | En tant que joueur, je peux contrôler le déplacement d'un véhicule (accélération, freinage, direction)                   |     2    |
-| 3   | En tant que joueur, je peux changer la couleur de mon véhicule                                                           |     5    |
-| 4   | En tant que joueur, je peux voir mes statistiques de course (chrono, classement, meilleur temps personnel) en temps réel.|     3    |
-| 5   | En tant que joueur, je peux recommencer le circuit en plein mileu de la course.                                          |     4    |
+| 1   | En tant que joueur, je peux participer à des courses multijoueurs et défier d'autres joueurs.                            | 1        |
+| 2   | En tant que joueur, je peux contrôler le déplacement d'un véhicule (accélération, freinage, direction)                   | 2        |
+| 3   | En tant que joueur, je peux voir mes statistiques de course (chrono, classement, meilleur temps personnel) en temps réel.| 3        |
+| 4   | En tant que joueur, je peux recommencer le circuit en plein mileu de la course.                                          | 4        |
+| 5   | En tant que joueur, je peux changer la couleur de mon véhicule                                                           | 5        |
+
       
 - **🖧 Architecture matériel** (optionnel, peut être décrit avec le diagramme de séquence) : schéma overview présentant les machines et protocoles (serveurs, clients, broker) avec texte expliquant le choix des technologies 
 - **📞 Diagramme de séquence**: expliquer le déroulé d'une partie, les principales étapes à faire dans l'ordre et qui/quoi/comment, les couches s'échangent quelles données pour qui/pour quoi
