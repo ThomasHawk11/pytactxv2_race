@@ -6,17 +6,17 @@
 
 Ce jeu est un jeu de course en vue du dessus s'inspirant du principe de la série de jeux vidéo [TrackMania](https://fr.wikipedia.org/wiki/TrackMania).
     
-- **🎯 Contexte & cahier des charges** : 
+# 🎯 Contexte & cahier des charges : 
 
 Dans le cadre de notre troisième année de formation en BUT Informatique, en cours de Programmation avancée, nous  avons été chargés de développer un jeu en utilisant l'API de [PytactX](https://tutos.jusdeliens.com/index.php/2023/04/27/pytactx-creez-vos-propres-regles-du-jeu/).
 
-- **🎲 Règles du jeu** :
+# 🎲 Règles du jeu :
 
 Le jeu consiste à déplacer une voiture sur un plateau de jeu définit par un circuit. Le but étant de réaliser le tour le plus rapide dans le temps impartit. Vous serez en concurrence avec d'autres joueurs avec qui vous vous batterez pour la première place. 
 
 ![Maquette](res/maquette.png)
 
-- **🎮 Use cases**:
+# 🎮 Use cases:
 
 | N°  | Actions                                                                                                                  | Priorité |
 | --- | ------------------------------------------------------------------------------------------------------------------------ | -------- |
