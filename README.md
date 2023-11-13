@@ -1,6 +1,6 @@
 # pytactxv2_race
 
-- **Sonic Vroum**
+- **Turbo Vroum**
 - **Description** courte du jeu
 - **🎯 Contexte & cahier des charges** : développé dans le cadre d'une formation, pour un formateur pour monter en compétence en Python ...
 - **🎲 Règles** du jeu : maquette, déroulé d'une partie, conditions de victoire
