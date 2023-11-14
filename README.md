@@ -1,5 +1,3 @@
-# Turbo Vroum
-
 # Turbo Vroum 
 
 <img src="res/logo.png" width="200">
