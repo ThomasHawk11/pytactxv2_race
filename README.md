@@ -32,7 +32,8 @@ Le jeu consiste à déplacer une voiture sur un plateau de jeu définit par un c
 (optionnel, peut être décrit avec le diagramme de séquence) : schéma overview présentant les machines et protocoles (serveurs, clients, broker) avec texte expliquant le choix des technologies 
 
 # 📞 Diagramme de séquence 
-expliquer le déroulé d'une partie, les principales étapes à faire dans l'ordre et qui/quoi/comment, les couches s'échangent quelles données pour qui/pour quoi
+
+![Diagramme de séquence](res/diagramme%20de%20sequence%20d'une%20partie.svg)
 
 # ✅ Pré-requis 
 - Un ordinateur relié à Internet avec un navigateur web Chrome ou Firefox installé
