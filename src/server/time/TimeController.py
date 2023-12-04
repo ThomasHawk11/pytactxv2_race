@@ -5,51 +5,39 @@ class TimeController:
 
     def start(self) -> None:
         """Start the time master, saving the current timestamp."""
-        pass
 
     def getRoundDuration(self) -> int:
         """Return the round duration."""
-        pass
 
     def setRoundDuration(self, timer: int) -> None:
         """Set the round duration, in seconds."""
-        pass
 
     def getWarmUpDuration(self) -> int:
         """Return the warm-up duration."""
-        pass
-
+        
     def setWarmUpDuration(self, timer: int) -> None:
         """Set the warm-up duration, in seconds."""
-        pass
 
     def getLapDuration(self) -> int:
         """Return the lap duration."""
-        pass
 
     def setLapDuration(self, timer: int) -> None:
         """Set the lap duration, in seconds."""
-        pass
 
     def startLap(self) -> None:
         """Start the lap timer, saving the current timestamp."""
-        pass
 
     def stopLap(self) -> None:
         """Stop the lap timer."""
-        pass
 
     def getCurrTimestamp(self) -> int:
         """Return the current timestamp from the server."""
-        pass
 
     def getRemainingTime(self) -> int:
         """Return remaining time based on the startTimestamp and the currTimestamp."""
-        pass
 
     def setRemainingTime(self) -> None:
         """Set the remaining time depending on the elapsed time."""
-        pass
 
 class TimeController(TimeController):
     def __init__(self,
