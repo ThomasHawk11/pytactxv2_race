@@ -5,18 +5,23 @@ class TimeController:
 
     def start(self) -> None:
         """Start the time master, saving the current timestamp."""
+        pass
 
     def getRoundDuration(self) -> int:
         """Return the round duration."""
+        pass
 
     def setRoundDuration(self, timer: int) -> None:
         """Set the round duration, in seconds."""
+        pass
 
     def getWarmUpDuration(self) -> int:
         """Return the warm-up duration."""
-        
+        pass
+
     def setWarmUpDuration(self, timer: int) -> None:
         """Set the warm-up duration, in seconds."""
+        pass
 
     def getLapDuration(self) -> int:
         """Return the lap duration."""
@@ -26,18 +31,23 @@ class TimeController:
 
     def startLap(self) -> None:
         """Start the lap timer, saving the current timestamp."""
+        pass
 
     def stopLap(self) -> None:
         """Stop the lap timer."""
+        pass
 
     def getCurrTimestamp(self) -> int:
         """Return the current timestamp from the server."""
+        pass
 
     def getRemainingTime(self) -> int:
         """Return remaining time based on the startTimestamp and the currTimestamp."""
+        pass
 
     def setRemainingTime(self) -> None:
         """Set the remaining time depending on the elapsed time."""
+        pass
 
 class TimeController(TimeController):
     def __init__(self,
@@ -62,6 +72,7 @@ class TimeController(TimeController):
         self.__remaining_time = None
         self.__remaining_lap_time = None
         self.__best_lap_time = float('inf')  # Initialise avec un positif infini
+        self.score = 0  # Initialise le score à 0
 
     def start(self) -> None:
         """Start the time master, saving the current timestamp."""
@@ -77,6 +88,7 @@ class TimeController(TimeController):
         self.__remaining_lap_time = elapsed_time
         if elapsed_time < self.__best_lap_time:
             self.__best_lap_time = elapsed_time
+            self.score = int(elapsed_time)  # Update the score with the best lap time
 
     def getBestLapTime(self) -> int:
         """Return the best lap time."""
