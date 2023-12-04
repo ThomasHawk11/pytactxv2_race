@@ -72,7 +72,6 @@ class TimeController(TimeController):
         self.__remaining_time = None
         self.__remaining_lap_time = None
         self.__best_lap_time = float('inf')  # Initialise avec un positif infini
-        self.score = 0  # Initialise le score à 0
 
     def start(self) -> None:
         """Start the time master, saving the current timestamp."""
@@ -88,7 +87,6 @@ class TimeController(TimeController):
         self.__remaining_lap_time = elapsed_time
         if elapsed_time < self.__best_lap_time:
             self.__best_lap_time = elapsed_time
-            self.score = int(elapsed_time)  # Update the score with the best lap time
 
     def getBestLapTime(self) -> int:
         """Return the best lap time."""
