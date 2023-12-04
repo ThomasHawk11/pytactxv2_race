@@ -51,5 +51,5 @@ git clone https://github.com/ThomasHawk11/pytactxv2_race.git
     - définition du plan de test ce qu'on attend quand on fait quoi 
     - step by step pour lancer les tests
 - **🛣️ Roadmap**
-- **🧑‍💻 Thomas PLANTAIS, Mathieu ORDONNAUD, Mylan MEGARD**
+- **🧑‍💻 Thomas PLANTAIS, Mathieu ORDONNAUD, Mylan MEGARD, Romain LESIEUR**
 - **⚖️ License [CC BY-NC 4.0 Deed](https://creativecommons.org/licenses/by-nc/4.0/)**
