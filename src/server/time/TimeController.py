@@ -1,4 +1,5 @@
 from api.j2l.pytactx.agent import Agent
+from datetime import timedelta
 
 class TimeController:
 
@@ -130,3 +131,14 @@ class TimeController(TimeController):
 
     def getRemainingLapTime(self) -> int:
         return self.__lap_duration - (self.__remaining_lap_time / 1000)
+
+    def format_time(self, milliseconds: int) -> str:
+      """
+      Format the given time duration in milliseconds into a human-readable string.
+
+      :param milliseconds: The time duration in milliseconds.
+      :return: A formatted string representing the time.
+      """
+      duration = timedelta(milliseconds=milliseconds)
+      minutes, seconds = divmod(duration.seconds, 60)
+      return f"{minutes:02d}:{seconds:02d}.{int(duration.microseconds / 1000):03d}"
