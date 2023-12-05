@@ -73,7 +73,7 @@ class TimeController(TimeController):
         self.__start_lap_timestamp = None
         self.__remaining_time = None
         self.__remaining_lap_time = None
-        self.__best_lap_times = {}  # Dictionnaire pour enregistrer le meilleur temps par joeur
+        self.__best_lap_times = {}  # Dictionnaire pour enregistrer le meilleur temps par joueur
 
     def start(self) -> None:
       """Start the time master, saving the current timestamp."""
@@ -89,8 +89,17 @@ class TimeController(TimeController):
       elapsed_time = self.__pytactx_agent.game["t"] - self.__start_lap_timestamp
       self.__remaining_lap_time = elapsed_time
 
-      if agent.player_id not in self.__best_lap_times or elapsed_time < self.__best_lap_times[agent.player_id]:
-          self.__best_lap_times[agent.player_id] = elapsed_time
+      if player_id not in self.__best_lap_times or elapsed_time < self.__best_lap_times[player_id]:
+          self.setBestLapTime(player_id, elapsed_time)
+
+    def setBestLapTime(self, player_id: int, lap_time: int) -> None:
+      """
+      Set the best lap time for a specific player.
+
+      :param player_id: The ID of the player.
+      :param lap_time: The new best lap time in milliseconds.
+      """
+      self.__best_lap_times[player_id] = lap_time
 
     def getBestLapTime(self) -> int:
       """Return the best lap time for the current player."""
