@@ -25,9 +25,11 @@ class TimeController:
 
     def getLapDuration(self) -> int:
         """Return the lap duration."""
+        pass
 
     def setLapDuration(self, timer: int) -> None:
         """Set the lap duration, in seconds."""
+        pass
 
     def startLap(self) -> None:
         """Start the lap timer, saving the current timestamp."""
@@ -71,26 +73,29 @@ class TimeController(TimeController):
         self.__start_lap_timestamp = None
         self.__remaining_time = None
         self.__remaining_lap_time = None
-        self.__best_lap_time = float('inf')  # Initialise avec un positif infini
+        self.__best_lap_times = {}  # Dictionnaire pour enregistrer le meilleur temps par joeur
 
     def start(self) -> None:
-        """Start the time master, saving the current timestamp."""
-        self.__start_timestamp = self.__pytactx_agent.game["t"]
+      """Start the time master, saving the current timestamp."""
+      self.__start_timestamp = self.__pytactx_agent.game["t"]
 
     def startLap(self) -> None:
-        """Start the lap timer, saving the current timestamp."""
-        self.__start_lap_timestamp = self.__pytactx_agent.game["t"]
+      """Start the lap timer, saving the current timestamp."""
+      self.__start_lap_timestamp = self.__pytactx_agent.game["t"]
 
     def stopLap(self) -> None:
-        """Stop the lap timer and update the best lap time if needed."""
-        elapsed_time = self.__pytactx_agent.game["t"] - self.__start_lap_timestamp
-        self.__remaining_lap_time = elapsed_time
-        if elapsed_time < self.__best_lap_time:
-            self.__best_lap_time = elapsed_time
+      """Stop the lap timer and update the best lap time if needed."""
+      player_id = self.__pytactx_agent.playerID
+      elapsed_time = self.__pytactx_agent.game["t"] - self.__start_lap_timestamp
+      self.__remaining_lap_time = elapsed_time
+
+      if agent.player_id not in self.__best_lap_times or elapsed_time < self.__best_lap_times[agent.player_id]:
+          self.__best_lap_times[agent.player_id] = elapsed_time
 
     def getBestLapTime(self) -> int:
-        """Return the best lap time."""
-        return self.__best_lap_time
+      """Return the best lap time for the current player."""
+      player_id = self.__pytactx_agent.playerID
+      return self.__best_lap_times.get(player_id, float('inf'))
 
     def getRoundDuration(self) -> int:
         return self.__round_duration
