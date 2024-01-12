@@ -3,7 +3,7 @@ import server.time.TimeController as timectrl
 from typing import List, Tuple
 from operator import itemgetter
 
-class ILeaderboard:
+class ILeaderboardController:
   def updateLeaderboard(self) -> None:
     """
     Update the leaderboard and set highscore if needed.
@@ -58,7 +58,7 @@ class ILeaderboard:
     """
   
 
-class Leaderboard(ILeaderboard):
+class LeaderboardController(ILeaderboardController):
   def __init__(self, arbitre: pytactx.Agent, time_controller: timectrl.TimeController) -> None:
     """
     Initialize the leaderboard.
