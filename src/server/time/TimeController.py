@@ -1,7 +1,7 @@
 from api.j2l.pytactx.agent import Agent
 from datetime import timedelta
 
-class TimeController:
+class ITimeController:
 
     def start(self) -> None:
         """Start the time master, saving the current timestamp."""
@@ -51,7 +51,7 @@ class TimeController:
         """Set the remaining time depending on the elapsed time."""
         pass
 
-class TimeController(TimeController):
+class TimeController(ITimeController):
     def __init__(self,
                  agent: Agent,
                  round_duration: int = 300,
