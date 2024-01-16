@@ -39,9 +39,9 @@ class RuleManager:
                }], ["nRespawn", [0, 0, 0, 0, 1]], ["borderHit", 0],
                ["collision", [False, False, False, False, False]],
                ["pImgs",[
-                 "https://raw.githubusercontent.com/ThomasHawk11/pytactxv2_race/main/res/vehicule.svg",
-                 "https://raw.githubusercontent.com/ThomasHawk11/pytactxv2_race/main/res/vehicule.svg",
-                 "https://raw.githubusercontent.com/ThomasHawk11/pytactxv2_race/main/res/vehicule.svg",
+                 "https://raw.githubusercontent.com/ThomasHawk11/pytactxv2_race/main/res/vehicule.png",
+                 "https://raw.githubusercontent.com/ThomasHawk11/pytactxv2_race/main/res/vehicule.png",
+                 "https://raw.githubusercontent.com/ThomasHawk11/pytactxv2_race/main/res/vehicule.png",
                  "rocket.svg"
                ],
                ["invicible", [True, True, True, True, True]],
