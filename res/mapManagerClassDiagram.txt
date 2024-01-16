@@ -1,0 +1,31 @@
+---
+title: Map managing class diagram
+---
+classDiagram
+    class Map{
+      -String url
+      -dict size
+      -int[][] collisionMatrix
+      -int[] friction
+      -String[] mapImgs
+      -dict[] checkpoints
+      +Map()
+    }
+    class MapPool{
+      -Map[] maps
+      +getInstance()$ MapPool
+      -MapPool()
+      +getMapByIdx(idx : int) Map
+      +getRandomMap() Map
+      +addMap(map : Map) Boolean
+    }
+    class MapManager{
+      -Agent agent
+      +getInstance()$ MapManager
+      -MapManager()
+      +setMap(map : Map) bool
+    }
+    MapPool <-- MapPool
+    Map --o MapPool
+
+
