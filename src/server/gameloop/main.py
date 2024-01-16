@@ -6,7 +6,7 @@ import j2l.pytactx.agent as pytactx
 agent = pytactx.Agent(playerId=input("gameloop manager login : "),
                       arena="turbovroum",
                       username="demo",
-                      password="demo",
+                      password=input("password : ",
                       server="mqtt.jusdeliens.com",
                       verbosity=2)
 
