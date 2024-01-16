@@ -1,13 +1,16 @@
+import os
+from dotenv import load_dotenv
 from mapManager import *
 import api.j2l.pytactx.agent as pytactx
 from server.rulesManager.rulesManager import *
 
 def main():
-  agent = pytactx.Agent(playerId="02102003",
-    arena="turbovroum",
-    username="demo",
-    password="demo",
-    server="mqtt.jusdeliens.com",
+  load_dotenv()
+  agent = pytactx.Agent(playerId=os.getenv("PLAYERID"),
+    arena=os.getenv("ARENA"),
+    username=os.getenv("USERNAME"),
+    password=os.getenv("PASSWORD"),
+    server=os.getenv("SERVER"),
     verbosity=2)
   mapPool = MapPool.getInstance()
   ruleManager = RuleManager.getInstance()
