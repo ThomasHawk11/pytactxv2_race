@@ -38,7 +38,7 @@ class RuleManager:
                  "r": [0]
                }], ["nRespawn", [0, 0, 0, 0, 1]], ["borderHit", 0],
                ["collision", [False, False, False, False, False]],
-               ["PImgs",[
+               ["pImgs",[
                  "https://raw.githubusercontent.com/ThomasHawk11/pytactxv2_race/main/res/vehicule.svg",
                  "https://raw.githubusercontent.com/ThomasHawk11/pytactxv2_race/main/res/vehicule.svg",
                  "https://raw.githubusercontent.com/ThomasHawk11/pytactxv2_race/main/res/vehicule.svg",
