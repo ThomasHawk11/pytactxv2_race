@@ -28,7 +28,9 @@ class TimeAttack:
 
 			# Check each checkpoints
 			checkpoints = self.agent.game['dtFire']
+			id = 0
 			for cp in checkpoints:
+				id = id + 1
 
 				# If the player is in the range of the checkpoint
 				if player['x'] <= cp['x'] + 2 and player['x'] >= cp['x'] - 2:
