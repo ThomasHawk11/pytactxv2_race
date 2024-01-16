@@ -1,6 +1,6 @@
 from mapManager import *
-import j2l.pytactx.agent as pytactx
-from ../rulesManager/rulesManager import *
+import api.j2l.pytactx.agent as pytactx
+from server.rulesManager.rulesManager import *
 
 def main():
   agent = pytactx.Agent(playerId="02102003",
