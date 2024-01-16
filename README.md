@@ -55,5 +55,7 @@ git clone https://github.com/ThomasHawk11/pytactxv2_race.git
 python -m unittest file_name.py
 ```
 - **🛣️ Roadmap**
-- **🧑‍💻 Thomas PLANTAIS, Mathieu ORDONNAUD, Mylan MEGARD, Romain LESIEUR**
-- **⚖️ License [CC BY-NC 4.0 Deed](https://creativecommons.org/licenses/by-nc/4.0/)**
+# 🧑‍💻 Auteurs
+**Thomas PLANTAIS, Mathieu ORDONNAUD, Mylan MEGARD, Romain LESIEUR**
+# ⚖️ License [CC BY-NC 4.0 Deed](https://creativecommons.org/licenses/by-nc/4.0/)
+
