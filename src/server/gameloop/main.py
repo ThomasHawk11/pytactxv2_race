@@ -3,7 +3,7 @@ import time
 import j2l.pytactx.agent as pytactx
 
 # Create the agent
-agent = pytactx.Agent(playerId=input("id: "),
+agent = pytactx.Agent(playerId="22092003",
                       arena="turbovroum",
                       username="demo",
                       password="demo",
