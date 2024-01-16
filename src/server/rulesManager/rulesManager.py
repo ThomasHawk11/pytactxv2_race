@@ -42,7 +42,7 @@ class RuleManager:
                  "https://raw.githubusercontent.com/ThomasHawk11/pytactxv2_race/main/res/vehicule.svg",
                  "https://raw.githubusercontent.com/ThomasHawk11/pytactxv2_race/main/res/vehicule.svg",
                  "https://raw.githubusercontent.com/ThomasHawk11/pytactxv2_race/main/res/vehicule.svg",
-                 "rocket.svg",
+                 "rocket.svg"
                ]
                ["invicible", [True, True, True, True, True]],
                ["accelerationOnly", [True, True, True, True, True]],
