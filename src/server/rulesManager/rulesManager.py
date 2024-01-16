@@ -31,31 +31,26 @@ class RuleManager:
   def setupGameRules(self) -> bool:
     agent = self.getAgent()
     if agent != None and isinstance(agent, Agent):
+      rules = [
+        ["invisible", [False, False, False, False, False]],
+        ["spawnArea", {"x": [28], "y": [17], "r": [0]}],
+        ["nRespawn", [0, 0, 0, 0, 1]],
+        ["borderHit", 0],
+        ["collision", [False, False, False, False, False]],
+        ["invicible", [True, True, True, True, True]],
+        ["accelerationOnly", [True, True, True, True, True]],
+        ["dtMove", [1, 1, 1, 1, 1]],
+        ["dtDir", [1, 1, 1, 1, 1]],
+        ["moveToDir", [True, True, True, True, True]],
+        ["dDirMax", [30, 30, 30, 30, 30]],
+        ["fxFire", [False, False, False, False, False]],
+        ["hitCollision", [0, 0, 0, 0, 0]]
+      ]
+      
       agent.ruleArena("range", [0 for i in range(5)])
-      agent.ruleArena("invisible", [False, False, False, False, False])
-      time.sleep(0.5)
-
-      agent.ruleArena("spawnArea", {"x": [28], "y": [17], "r": [0]})
-      agent.ruleArena("nRespawn", [0, 0, 0, 0, 1])
-      agent.ruleArena("borderHit", 0)
-      agent.ruleArena("collision", [False, False, False, False, False])
-      time.sleep(0.5)
-
-      agent.ruleArena("invicible", [True, True, True, True, True])
-      agent.ruleArena("accelerationOnly", [True, True, True, True, True])
-      agent.ruleArena("accelerationOnly", [True, True, True, True, True])
-      time.sleep(0.5)
-
-      agent.ruleArena("dtMove", [1, 1, 1, 1, 1])
-
-      agent.ruleArena("dtDir", [1, 1, 1, 1, 1])
-
-      agent.ruleArena("moveToDir", [True, True, True, True, True])
-      agent.ruleArena("dDirMax", [30, 30, 30, 30, 30])
-
-      agent.ruleArena("fxFire", [False, False, False, False, False])
-      agent.ruleArena("hitCollision", [0, 0, 0, 0, 0])
-
+      for rule in rules:
+        agent.ruleArena(rule[0],rule[1])
+        time.sleep(0.2)
       agent.update()
       return True
     return False
