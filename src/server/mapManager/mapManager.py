@@ -147,7 +147,6 @@ class MapManager:
 
   def __init__(self):
     self.agent = None
-    self.currentMap = None
 
   @staticmethod
   def getInstance() -> MapManager:
@@ -163,15 +162,6 @@ class MapManager:
 
   def getAgent(self) -> Agent:
     return self.agent
-
-  def setCurrentMap(self, map: Map) -> bool:
-    if map != None and isinstance(map, Map):
-      self.currentMap = map
-      return True
-    return False
-
-  def getCurrentMap(self) -> Agent:
-    return self.currentMap
 
   def setMap(self, map: Map) -> bool:
     if (map != None and isinstance(map, Map) and self.agent != None
@@ -200,7 +190,6 @@ class MapManager:
         self.agent.ruleArena("dtFire", map.getCheckpoints())
 
       self.agent.update()
-      self.setCurrentMap(map)
       return True
 
     return False
