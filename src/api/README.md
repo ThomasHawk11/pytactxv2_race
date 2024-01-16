@@ -25,18 +25,14 @@ Le jeu consiste à déplacer une voiture sur un plateau de jeu définit par un c
 - Environnement de développement ([VSCode](https://code.visualstudio.com/) ou [Replit](https://replit.com/))
 - [README API](src/api/README.md)
 # ⚙️ Installation
-- Ouvrir un invite de commandes
+ - Ouvrir un invite de commandes
 - Cloner le projet
 ```
 git clone https://github.com/ThomasHawk11/pytactxv2_race.git
 ```
-- Se rendre sur le 
 - Ouvrez le projet dans votre IDE préféré.
 - Faites chauffer la gomme sur le [circuit](https://play.jusdeliens.com/tactx/)
 - 3...2...1...Développez !
-
-- Ouvrez le projet dans votre IDE préféré.
-- Développez
 # 🧑‍💻 Auteurs
 **Thomas PLANTAIS, Mathieu ORDONNAUD, Mylan MEGARD, Romain LESIEUR**
 # ⚖️ License [CC BY-NC 4.0 Deed](https://creativecommons.org/licenses/by-nc/4.0/)
