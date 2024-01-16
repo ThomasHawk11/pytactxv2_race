@@ -5,6 +5,7 @@
 ## Description
 
 Ce jeu est un jeu de course en vue du dessus s'inspirant du principe de la série de jeux vidéo [TrackMania](https://fr.wikipedia.org/wiki/TrackMania).
+L'objectif pour chaque joueur est de se mesurer aux autres dans une course. Le gagnant sera celui qui aura effectué le tour le plus rapide dans le temps imparti.
     
 # 🎯 Contexte & cahier des charges
 
