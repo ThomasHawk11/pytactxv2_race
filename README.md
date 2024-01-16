@@ -47,6 +47,8 @@ Le jeu consiste à déplacer une voiture sur un plateau de jeu définit par un c
 git clone https://github.com/ThomasHawk11/pytactxv2_race.git
 ```
 - Se rendre sur le [circuit](https://play.jusdeliens.com/tactx/)
+- Ouvrez le projet dans votre IDE préféré.
+- Développez
 # 🧪 Tests 
 - Les fichiers de tests sont contenus dans [tests](test)
 ```
