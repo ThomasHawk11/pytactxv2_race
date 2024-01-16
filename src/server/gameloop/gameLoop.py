@@ -77,7 +77,6 @@ class GameLoop:
 		self.agent.update()
 		
 		self.timeAttackInstance.run()
-		# self.timeAttackInstance.run()
 		
 		return 0
 
