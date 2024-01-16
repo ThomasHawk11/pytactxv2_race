@@ -12,13 +12,20 @@ Le jeu consiste à déplacer une voiture sur un plateau de jeu définit par un c
 
 # 🎮 Use cases
 
-| N°  | Actions                                                                                                                  | Priorité |
-| --- | ------------------------------------------------------------------------------------------------------------------------ | -------- |
-| 1   | En tant que joueur, je peux participer à des courses multijoueurs et défier d'autres joueurs.                            | 1        |
-| 2   | En tant que joueur, je peux contrôler le déplacement d'un véhicule (accélération, freinage, direction)                   | 2        |
-| 3   | En tant que joueur, je peux voir mes statistiques de course (chrono, classement, meilleur temps personnel) en temps réel.| 3        |
-| 4   | En tant que joueur, je peux recommencer le circuit en plein mileu de la course.                                          | 4        |
-| 5   | En tant que joueur, je peux changer la couleur de mon véhicule                                                           | 5        |
+| N°  | Actions                                                                                                                  |
+| --- | ------------------------------------------------------------------------------------------------------------------------ | 
+| 1   | En tant que joueur, je peux participer à des courses multijoueurs et défier d'autres joueurs.                            | 
+| 2   | En tant que joueur, je peux contrôler le déplacement d'un véhicule (accélération, freinage, direction)                   | 
+| 3   | En tant que joueur, je peux voir mes statistiques de course (chrono, classement, meilleur temps personnel) en temps réel.| 
+| 4   | En tant que joueur, je peux recommencer le circuit en plein mileu de la course.                                          | 
+| 5   | En tant que joueur, je peux changer la couleur de mon véhicule                                                           |
+
+**Fonctions utilisables** :
+- ```update()``` : Récupérer les dernières valeurs des capteurs du robot sur le serveur et envoyer les requêtes tamponnées en une seule fois pour limiter la bande passante. A appeler dans la boucle principale au moins toutes les 10 msecs.
+- ```accelerate(ax,ay)``` : Ajouter une force d'accélération à appliquer sur l'agent. La requête sera envoyée lors du prochain appel à update().
+- ```move(dx,dy)``` : Demande un déplacement relatif sur la grille autour de la position précédente de l'agent en fonction des valeurs dx, dy spécifiées. La demande sera envoyée lors du prochain appel à update().
+- ```moveTowards(x,y)``` : Demande un déplacement d'un pas vers la direction absolue x,y spécifiée sur la grille. La demande sera envoyée lors du prochain appel à update().
+- ```lookAt(dir)``` : Demande une rotation de l'agent sur la grille. Dir doit être un nombre entier allant de 0 (est) à 3 (sud). La demande sera envoyée lors du prochain appel à update().
 
 # ✅ Pré-requis
 - Un ordinateur relié à Internet avec un navigateur web Chrome ou Firefox installé
