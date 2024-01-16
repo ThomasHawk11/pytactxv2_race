@@ -30,6 +30,8 @@ Le jeu consiste à déplacer une voiture sur un plateau de jeu définit par un c
 # ✅ Pré-requis
 - Un ordinateur relié à Internet avec un navigateur web Chrome ou Firefox installé
 - Environnement de développement ([VSCode](https://code.visualstudio.com/) ou [Replit](https://replit.com/))
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- Installer [Python](https://www.python.org/downloads/)
 
 # ⚙️ Installation
  - Ouvrir un invite de commandes
