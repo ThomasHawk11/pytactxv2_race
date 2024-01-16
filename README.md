@@ -46,10 +46,12 @@ Le jeu consiste à déplacer une voiture sur un plateau de jeu définit par un c
 ```
 git clone https://github.com/ThomasHawk11/pytactxv2_race.git
 ```
-- Se rendre sur le [circuit]()
+- Se rendre sur le [circuit](https://play.jusdeliens.com/tactx/)
 # 🧪 Tests 
-    - définition du plan de test ce qu'on attend quand on fait quoi 
-    - step by step pour lancer les tests
+- Les fichiers de tests sont contenus dans [tests](test)
+```
+python -m unittest file_name.py
+```
 - **🛣️ Roadmap**
 - **🧑‍💻 Thomas PLANTAIS, Mathieu ORDONNAUD, Mylan MEGARD, Romain LESIEUR**
 - **⚖️ License [CC BY-NC 4.0 Deed](https://creativecommons.org/licenses/by-nc/4.0/)**
