@@ -50,7 +50,7 @@ git clone https://github.com/ThomasHawk11/pytactxv2_race.git
 - Ouvrez le projet dans votre IDE préféré.
 - 3...2...1...Développez !
 # 🧪 Tests 
-- Les fichiers de tests sont contenus dans [tests](test)
+- Les fichiers de tests sont disponibles dans [tests](tests)
 ```
 python -m unittest file_name.py
 ```
